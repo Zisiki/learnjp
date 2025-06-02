@@ -163,14 +163,14 @@
         .rows-grid {
             flex: 1;
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 15px;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 24px;
             overflow-y: auto;
-            padding: 20px 10px;
+            padding: 20px;
             justify-items: center;
             align-content: center;
-            max-width: 300px;
-            margin: 0 auto;
+            width: 100%;
+            box-sizing: border-box;
         }
 
         .row-item {
@@ -215,8 +215,8 @@
             }
             
             .rows-grid {
-                grid-template-columns: repeat(5, 1fr);
-                gap: 10px;
+                grid-template-columns: repeat(3, minmax(0, 1fr));
+                gap: 24px;
             }
         }
     </style>
